@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-glow: pulseGlow 10s infinite ease-in-out;
+
+  @keyframes pulseGlow {
+    0%, 100% { transform: translate(0px, 0px) scale(1); }
+    50% { transform: translate(30px, -40px) scale(1.1); }
+  }
+}
+
+/* Custom Glassmorphism Card Style */
+@utility glass-card {
+  background: rgba(22, 28, 38, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
